@@ -16,10 +16,10 @@ class TestEuler66 < Test::Unit::TestCase
   end
   
   def test_diph_low_x
-    assert_equal(0,@euler66.diph_low_x(1000))
+    assert_equal(24248647.0,@euler66.diph_low_x(1000))
   end
   
   def setup
-    @euler66 = Euler66.new(1000)
+    @euler66 = Euler66.new(100_000_000)
   end
 end
